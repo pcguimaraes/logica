@@ -3,11 +3,10 @@ escrever uma mensagem que diga se ela poderá ou não votar este ano
 (não é necessário considerar o mês em que ela nasceu). */
 
 var user = require('readline-sync')
-
 var anoNascimento
 var anoAtual = 2020
-var idade = (anoAtual - anoNascimento)
 anoNascimento = user.question(`Insira seu ano de nascimeto: `)
+var idade = (anoAtual - anoNascimento)
 
 if(idade < 16){
     console.log(`Você tem ${idade} anos e NÃO PODE votar`)
