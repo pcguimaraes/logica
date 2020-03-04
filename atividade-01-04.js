@@ -6,7 +6,7 @@ var umaDuzia = 12
 var valorVarejo = 0.30
 var valorAtacado = 0.25
 var valorTotal = 0
-var numMacas = user.question('Quantas macas voce deseja comprar? ')
+var numMacas = user.questionInt('Quantas macas voce deseja comprar? ')
 
 if (numMacas < 12){
     (valorTotal = numMacas * valorVarejo)
@@ -14,4 +14,4 @@ if (numMacas < 12){
     (valorTotal = numMacas * valorAtacado)
 }
 
-console.log(`Você comprou ${numMacas} maçãs. Total da compra: R$${valorTotal}`)
+console.log(`Você comprou ${numMacas} macas.\n Total da compra: R$${valorTotal}`)

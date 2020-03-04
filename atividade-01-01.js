@@ -5,16 +5,16 @@ escrever uma mensagem que diga se ela poderá ou não votar este ano
 var user = require('readline-sync')
 var anoNascimento
 var anoAtual = 2020
-anoNascimento = user.question(`Insira seu ano de nascimeto: `)
+anoNascimento = user.questionInt(`Insira seu ano de nascimeto: `)
 var idade = (anoAtual - anoNascimento)
 
 if(idade < 16){
-    console.log(`Você tem ${idade} anos e NÃO PODE votar`)
+    console.log(`Voce tem ${idade} anos e NAO PODE votar`)
 }else if (idade < 18){
-    console.log(`Você tem ${idade} anos e PODE votar.`)
+    console.log(`Voce tem ${idade} anos e PODE votar.`)
 }
 else if (idade < 65){
-    console.log(`Vcoê tem ${idade} anos e DEVE votar.`)
+    console.log(`Voce tem ${idade} anos e DEVE votar.`)
 }else{
-    console.log(`Você tem ${idade} anos e PODE votar.`)
+    console.log(`Voce tem ${idade} anos e PODE votar.`)
 }

@@ -4,7 +4,7 @@ var a = readlineSync.questionInt('Digite um numero A: ')
 var b = readlineSync.questionInt('Digite um numero B: ')
 
 if(a % b == 0){
-    console.log(`${a} e divisivel por ${b}`)
+    console.log(`${a} eh divisivel por ${b}`)
 }else{
-    console.log(`${a} nao e divisivel por ${b}`)
+    console.log(`${a} nao eh divisivel por ${b}`)
 }

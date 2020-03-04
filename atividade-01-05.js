@@ -1,9 +1,9 @@
-/* Escreva um programa para ler 3 valores inteiros (considere ue não serão lidos valores iguais)
+/* Escreva um programa para ler 3 valores inteiros (considere que não serão lidos valores iguais)
 e escrevê-los em orem crescente.*/
 readlineSync = require('readline-sync')
-var numero1 = readlineSync.question('Digite o primeiro numero: ')
-var numero2 = readlineSync.question('Digite o segundo numero: ')
-var numero3 = readlineSync.question('Digite o terceiro numero: ')
+var numero1 = readlineSync.questionInt('Digite o primeiro numero: ')
+var numero2 = readlineSync.questionInt('Digite o segundo numero: ')
+var numero3 = readlineSync.questionInt('Digite o terceiro numero: ')
 var primeiroNumero
 var segundoNumero
 var terceiroNumero
