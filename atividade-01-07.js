@@ -1,7 +1,7 @@
 /* Escreva um programa para ler o numero de dados de um poligono retangular e a medida do lado (em cm).
 Calcular e imprimir o seguinte:
-- Se o numero de lados for igual a 3, escrever TRIANGULO e o valor da area
-- Se o numero de lados for igual a 4, escrever QUADRADO e o valor da area
+- Se o numero de lados for igual a 3, escrever TRIANGULO e o valor da area L²raiz3/4
+- Se o numero de lados for igual a 4, escrever QUADRADO e o valor da area L²
 - Se o numero de lados for igual a 5, escrever PENTAGONO */
 readlineSync = require('readline-sync')
 var numeroLados = readlineSync.question('Digite o numero de lados do poligono: ')
