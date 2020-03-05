@@ -20,7 +20,7 @@ while (conta < num2){
     conta = (conta + 1)
 }
 
-console.log(`${num1} * ${num1} = ${resultado}`)
+console.log(`${num1} X ${num1} = ${resultado}`)
 
 
 
