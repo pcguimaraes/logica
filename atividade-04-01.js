@@ -12,23 +12,10 @@ var primo = "PRIMO"
 while(conta <= ultimo){
     if(conta % 2 > 0){
         console.log(`${conta} ÍMPAR`)
+        
     }else{
         console.log(`${conta} PAR`)
     }
-  
-    
-
-    m = 2
-    while(m < conta){
-        if(conta%m==0){
-            numdiv++
-            primo = "PRIMO"
-        }
-        if(numdiv > 0){
-            primo = ""
-        }
-    }
-
 
     console.log(par_impar)
     conta++
