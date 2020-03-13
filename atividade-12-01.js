@@ -37,7 +37,7 @@ class Carro{
     console.log(`Cor: ${carro2.cor}`)
 
 // VERIFICA SE SAO IGUAIS
-    if(carro1.nome === carro2.nome) && (carro1.modelo === carro2.modelo){
+    if((carro1.nome === carro2.nome) && (carro1.modelo === carro2.modelo)){
         console.log('\nCARROS IGUAIS!')
     }else{
         console.log('\nCARROS DIFERENTES!')
