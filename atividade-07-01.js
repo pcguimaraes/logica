@@ -1,5 +1,5 @@
-/* Faça um algoritmo em que o usuário possa cadastrar preços de proutos e no final
-    exiba o preço e cada produto junto com o valor total. após inserir togos os produtos o
+/* Faça um algoritmo em que o usuário possa cadastrar preços de produtos e no final
+    exiba o preço de cada produto junto com o valor total. após inserir todos os produtos o
     programa deve pedir o valor a ser pago, caso o valor passe da compra exibir o troco,
     se o valor for menor informar ue a compra vai ser cancelada.*/
 
@@ -8,8 +8,8 @@ var precoUnit = []
 var precoTotal = 0
 var totalPago = 0
 
-for(i = 0; i < 4; i++){
-    precoUnit[i] = readlineSync.questionInt('Digite o valor: ')
+for(i = 1; i < 4; i++){
+    precoUnit[i] = readlineSync.questionInt('Digite o valor, [0 para finalizar]: ')
     precoTotal += precoUnit[i]
 }
 
