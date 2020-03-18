@@ -1,9 +1,7 @@
-/* (INNER JOIN) Faça um algoritmo que receba o nome e dois jogadores e após isso
-    peça 5 números de 1 a 10 para cada jogaor. Primeiro para o jogador A e depois
-    para o jogaor B.
-    Após a escolha de cada jogador o algoritmo deve apresentar quais foram os
-    números iguais que o jogador A e B colocaram.
-*/
+/**(LEFT JOIN) Faça um algoritmo que receba o nome de dois jogadores e após isso peça 5 números de 1 a 10 para cada jogador. Primeiro para o jogador A e depois para o jogador B. 
+Após a escolha de cada jogador o algoritmo deve apresentar quais foram os números que apenas o jogador A colocou diferente do B.
+ */
+
 var rs = require('readline-sync')
 var nomeA
 var nomeB
@@ -35,8 +33,8 @@ for(i = 0; i < qtdeNumeros; i++){
 
 for(i=0;i<numerosA.length;i++){
         for(j=0;j<numerosA.length;j++){
-            if(numerosA[i] == numerosB[j]){numerosI.push(numerosA[i])}
+            while(numerosA[i] != numerosB[j]){numerosI.push(numerosA[i])}
         }
 }
 
-console.log('Numeros iguais: ' + numerosI)
+console.log('Numeros diferentes que o ' + nomeA + ' jogou: ' + numerosI)
